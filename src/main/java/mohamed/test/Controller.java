@@ -13,6 +13,11 @@ public class Controller {
         return "Hello worled";
     }
 
+    @GetMapping("next")
+    public String next(){
+        return "Hello next";
+    }
+
     @PostMapping("post")
     public String get(@RequestBody String name) {
         return name;
